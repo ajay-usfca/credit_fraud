@@ -2,21 +2,6 @@
 
 POC for the following things for the credit_card_fraud dataset
 
-1) Experiments and artifact tracking:
+1) Experiments and artifact tracking: MLFlow and WANDB (weights and biases)
 
-
-Tools used:
-
-  a) MLFlow
-  
-  b) Weights and biases (WANDB)
- 
- 
-2) Model monitoring - data drift, model performance
-
-
-Tools used:
-
-  a) EvidentlyAI
-  
-  b) Alibii detect
+2) Model monitoring - data drift, model performance: EvidentlyAI and Alibi detect
