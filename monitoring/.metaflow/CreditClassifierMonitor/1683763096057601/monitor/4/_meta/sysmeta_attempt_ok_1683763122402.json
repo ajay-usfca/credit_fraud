@@ -1,1 +1,0 @@
-{"flow_id": "CreditClassifierMonitor", "run_number": "1683763096057601", "step_name": "monitor", "task_id": "4", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "True", "tags": ["attempt_id:0"], "user_name": "ajay", "ts_epoch": 1683763122402}
