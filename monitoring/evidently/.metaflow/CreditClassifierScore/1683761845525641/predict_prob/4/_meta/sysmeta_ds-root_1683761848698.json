@@ -1,0 +1,1 @@
+{"flow_id": "CreditClassifierScore", "run_number": "1683761845525641", "step_name": "predict_prob", "task_id": "4", "field_name": "ds-root", "type": "ds-root", "value": "/Users/ajay/Downloads/mlops/credit_fraud/monitoring/.metaflow", "tags": ["attempt_id:0"], "user_name": "ajay", "ts_epoch": 1683761848698}

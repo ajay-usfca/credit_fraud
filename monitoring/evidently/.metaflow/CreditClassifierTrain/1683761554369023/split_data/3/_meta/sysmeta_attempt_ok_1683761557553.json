@@ -1,0 +1,1 @@
+{"flow_id": "CreditClassifierTrain", "run_number": "1683761554369023", "step_name": "split_data", "task_id": "3", "field_name": "attempt_ok", "type": "internal_attempt_status", "value": "True", "tags": ["attempt_id:0"], "user_name": "ajay", "ts_epoch": 1683761557553}

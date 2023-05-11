@@ -1,0 +1,28 @@
+[MFLOG|0|2023-05-10T23:52:44.967251Z|runtime|018eb23c-6b9d-4f2b-af80-7420ee73c998]<flow CreditClassifierMonitor step monitor> failed:
+[MFLOG|0|2023-05-10T23:52:44.972926Z|runtime|eac9f01e-55ee-453a-a40b-148f5e714004]    Internal error
+[MFLOG|0|2023-05-10T23:52:44.974638Z|runtime|d437dd39-8634-4681-915a-639b4193de11]Traceback (most recent call last):
+[MFLOG|0|2023-05-10T23:52:44.974809Z|runtime|a6748b66-9e38-46ec-95ae-c95bf50d5f0c]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/cli.py", line 1172, in main
+[MFLOG|0|2023-05-10T23:52:44.974884Z|runtime|1fa646ec-fcd4-43b5-afcf-344d881e8ec5]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2023-05-10T23:52:44.974953Z|runtime|a38acac0-01ba-4e51-b269-7f2fcb6e226a]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2023-05-10T23:52:44.975015Z|runtime|da8287b2-f45a-496c-b300-cee0c44230ec]    return self.main(args, kwargs)
+[MFLOG|0|2023-05-10T23:52:44.975071Z|runtime|5f4603f6-6d3a-46e4-9cec-9fdbb85974a5]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2023-05-10T23:52:44.975117Z|runtime|723fef63-f519-4c9f-aa1e-885d3d648824]    rv = self.invoke(ctx)
+[MFLOG|0|2023-05-10T23:52:44.975167Z|runtime|74a8f8dc-7366-4326-8ecf-3cabcfe52b3f]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2023-05-10T23:52:44.975218Z|runtime|3cf88a02-f5f1-434a-bf8c-2a2467817f13]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2023-05-10T23:52:44.975262Z|runtime|a5e61929-d842-4498-b4a1-38461c8f461a]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2023-05-10T23:52:44.975314Z|runtime|cb861082-4349-46c1-9d47-5906c740a31b]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2023-05-10T23:52:44.975360Z|runtime|1ccde7e3-5a6c-43ea-97ff-21a6f21dc70c]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2023-05-10T23:52:44.975409Z|runtime|ccc163d2-b9e1-4c80-9eb3-544bac60eb89]    return callback(args, kwargs)
+[MFLOG|0|2023-05-10T23:52:45.344518Z|runtime|8aeee6a1-bc39-4a58-809c-5ae7c806123e]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2023-05-10T23:52:45.344792Z|runtime|7c7ecab4-9f50-420b-bdc1-aacd9a4b289a]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2023-05-10T23:52:45.344855Z|runtime|5d472fd9-a71b-4964-ae1c-2eb21028255e]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/cli.py", line 581, in step
+[MFLOG|0|2023-05-10T23:52:45.344899Z|runtime|b3c66c9f-f24a-4784-9ec3-9a2a5eb1ae3e]    task.run_step(
+[MFLOG|0|2023-05-10T23:52:45.344942Z|runtime|1b60edc7-369d-4df2-979b-ebfe8994d246]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/task.py", line 586, in run_step
+[MFLOG|0|2023-05-10T23:52:45.344989Z|runtime|cb842082-d391-47e8-ac60-212922165d11]    self._exec_step_function(step_func)
+[MFLOG|0|2023-05-10T23:52:45.345028Z|runtime|a906f181-15ec-4d83-a497-ecdf51586569]  File "/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/metaflow/task.py", line 60, in _exec_step_function
+[MFLOG|0|2023-05-10T23:52:45.345072Z|runtime|da6b2235-d32b-47ae-92c3-86fd8c029dd6]    step_function()
+[MFLOG|0|2023-05-10T23:52:45.345112Z|runtime|cfaa167e-cb3e-4079-90a0-da4856311968]  File "/Users/ajay/Downloads/mlops/credit_fraud/monitoring/monitor_flow.py", line 55, in monitor
+[MFLOG|0|2023-05-10T23:52:45.345374Z|runtime|7fe6cf79-235c-4aaa-baac-87587d82611a]    from evidently.metrics import DatasetDriftMetric, ClassificationQualityMetric, ClassificationPreset
+[MFLOG|0|2023-05-10T23:52:45.345426Z|runtime|0bb7b626-f206-4ca0-a0ea-a34dc6a924c9]ImportError: cannot import name 'ClassificationPreset' from 'evidently.metrics' (/opt/anaconda3/envs/mlops/lib/python3.10/site-packages/evidently/metrics/__init__.py)
+[MFLOG|0|2023-05-10T23:52:45.345475Z|runtime|f7630f5e-9b5b-49a8-9cbd-f4d0bd378b02]
+[MFLOG|0|2023-05-10T23:52:45.345998Z|runtime|8956ce4e-ae7c-475c-8686-a89a7a87e45d]Task failed.
