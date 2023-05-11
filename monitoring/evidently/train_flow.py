@@ -20,7 +20,7 @@ class CreditClassifierTrain(FlowSpec):
         This is where you would load the actual model development data set.
         '''
     
-        self.df = pd.read_csv('../data/credit_card_historical_data.csv')
+        self.df = pd.read_csv('../../data/credit_card_historical_data.csv')
         self.next(self.split_data)
 
     @step

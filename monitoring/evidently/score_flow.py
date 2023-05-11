@@ -11,7 +11,7 @@ class CreditClassifierScore(FlowSpec):
     Persist predictions as a dataFrame
     '''
 
-    file_name = Parameter('file_name', default = '../data/credit_card_production_data.csv')
+    file_name = Parameter('file_name', default = '../../data/credit_card_production_data.csv')
 
     @step
     def start(self):
